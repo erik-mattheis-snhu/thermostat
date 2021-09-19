@@ -2,7 +2,7 @@
 
 * a hardware timer is used to drive the main loop at 10 Hz (configurable)
 * the onboard UART is used to provide bi-directional communication to a server via the debug serial port
-* the onboard temperature sensor is used to measure ambient temperature <https://www.ti.com/product/TMP116>
+* the [onboard temperature](https://www.ti.com/product/TMP116) sensor is used to measure ambient temperature
 * the side buttons on the board represent up and down buttons that one might find on a thermostat for adjusting temperature
  * pressing button 0 lowers the desired temperature
  * pressing button 1 raises the lowered temperature
