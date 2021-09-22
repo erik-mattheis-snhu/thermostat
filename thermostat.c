@@ -186,9 +186,10 @@ void initializeServerConnection() {
     UART_init();
     UART_Params_init(&uartParams);
 
-    uartParams.readMode    = UART_MODE_CALLBACK;
-    uartParams.readEcho     = UART_ECHO_OFF;
-    uartParams.readCallback = serverCallback;
+    uartParams.readMode      = UART_MODE_CALLBACK;
+    uartParams.readEcho      = UART_ECHO_OFF;
+    uartParams.readCallback  = serverCallback;
+    uartParams.writeDataMode = UART_DATA_BINARY;
 
     uart = UART_open(CONFIG_UART_0, &uartParams);
 
